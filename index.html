@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PréviWeb</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>PréviWeb</h1>
+  <p>Importez une série chronologique, analysez-la et prévoyez son évolution.</p>
+</header>
+
+<nav aria-label="Navigation principale">
+  <a href="#importer">Importer</a>
+  <a href="#analyser">Analyser</a>
+  <a href="#prevoir">Prévoir</a>
+</nav>
+
+<main>
+  <section id="importer">
+    <h2>Importer</h2>
+    <p>Cette section permet de charger votre série chronologique depuis un fichier CSV.</p>
+
+    <form id="form-import">
+      <label for="fichier-csv">Fichier CSV au format date,valeur</label>
+      <input type="file" id="fichier-csv" name="fichier" accept=".csv,text/csv" required>
+      <button type="submit">Importer</button>
+    </form>
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+
+    <h3>Format attendu</h3>
+    <pre>date,valeur
+2020-01-01,1250.5
+2020-02-01,1180.0</pre>
+    <ul>
+      <li>Dates au format AAAA-MM-JJ.</li>
+      <li>Valeurs numériques avec un point décimal.</li>
+    </ul>
+  </section>
+
+  <section id="analyser">
+    <h2>Analyser</h2>
+    <p>Cette section permet de visualiser la série et de consulter ses observations.</p>
+    <div class="graphique" id="zone-serie">Le graphique de la série apparaîtra ici</div>
+    <table id="tableau-observations">
+      <thead>
+        <tr><th>Date</th><th>Valeur</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section id="prevoir">
+    <h2>Prévoir</h2>
+    <p>Cette section permettra de calculer et d'afficher les prévisions des mois à venir.</p>
+    <div class="graphique" id="zone-prevision">Le graphique de la prévision apparaîtra ici</div>
+  </section>
+</main>
+
+<footer>
+  <p>khenouci Amira — M2 DS&amp;NLP, Université Blida 1</p>
+</footer>
+</body>
+</html>
