@@ -2,7 +2,7 @@
 
 Projet du module **Méthodes chronologiques et prévisions** — M2 DS&NLP, Université Blida 1 (2026/2027).
 
-**Auteur(s) :** NOM Prénom (à remplacer)
+**Auteur(s) :** AMIRA KHENOUCI & YAZI ABDERRAHMANE (à remplacer)
 
 PréviWeb est une application web pour importer une série chronologique (CSV `date,valeur`), l'analyser et produire des prévisions.
 
