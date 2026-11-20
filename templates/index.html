@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PréviWeb</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
 <header>
@@ -43,7 +43,11 @@
   <section id="analyser">
     <h2>Analyser</h2>
     <p>Cette section permet de visualiser la série et de consulter ses observations.</p>
-    <div class="graphique" id="zone-serie">Le graphique de la série apparaîtra ici</div>
+    <div class="graphique" id="zone-serie">
+      <span class="attente">Le graphique de la série apparaîtra ici</span>
+      <canvas id="graphique-serie"></canvas>
+    </div>
+    <p id="resume-serie"></p>
     <table id="tableau-observations">
       <thead>
         <tr><th>Date</th><th>Valeur</th></tr>
@@ -60,7 +64,9 @@
 </main>
 
 <footer>
-  <p>Khenouci Amira & Yazi Abderrahmane  — M2 DS&amp;NLP, Université Blida 1</p>
+  <p>Amira khenouci & Abderrahmane yazi— M2 DS&amp;NLP, Université Blida 1</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/static/app.js"></script>
 </body>
 </html>

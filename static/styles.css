@@ -121,3 +121,8 @@ button:focus-visible {
   nav { flex-direction: column; }
   form { flex-direction: column; align-items: stretch; }
 }
+
+/* TP2 : graphiques Chart.js */
+.graphique { height: 320px; position: relative; }
+.graphique canvas { flex: 1; min-width: 0; max-width: 100%; }
+#resume-serie { font-weight: 600; margin: .75rem 0 0; }
